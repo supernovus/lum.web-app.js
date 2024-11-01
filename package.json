@@ -1,6 +1,6 @@
 {
   "name": "@lumjs/web-app",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "main": "lib/index.js",
   "exports":
   {
@@ -9,19 +9,25 @@
     "./extension": "./lib/extension.js",
     "./package.json": "./package.json"
   },
-  "license": "MIT",
+  "dependencies": {
+    "@lumjs/core": "^1.37.0",
+    "@lumjs/web-core": "^1.7.0",
+    "@lumjs/web-service": "^1.2.0"
+  },
+  "devDependencies":
+  {
+    "@lumjs/build": "^1.1.0"
+  },
+  "scripts":
+  {
+    "build-meta": "lum-build",
+    "build-jsdoc": "jsdoc -c ./jsdoc.js",
+    "build-docs": "npm run build-meta && npm run build-jsdoc"
+  },
   "repository":
   {
     "type": "git",
     "url": "https://github.com/supernovus/lum.web-app.js.git"
   },
-  "dependencies": {
-    "@lumjs/core": "^1.26.0",
-    "@lumjs/web-core": "^1.4.0",
-    "@lumjs/web-service": "^1.1.0"
-  },
-  "scripts":
-  {
-    "build-docs": "jsdoc -c ./jsdoc.json"
-  }
+  "license": "MIT"
 }
