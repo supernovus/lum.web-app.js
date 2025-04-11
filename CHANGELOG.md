@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2025-04-10
+### Changed
+- WebApp options are now a private object copying all properties
+  from both the default options as well as the constructor argument value.
+- WebApp#add debugging now enabled via `options.debug`
+
 ## [1.3.0] - 2024-11-09
 ### Fixed
 - A compatibility bug in `triggerAll` (fix released as `v1.2.1`).
