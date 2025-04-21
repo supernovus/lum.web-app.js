@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2025-04-21
+### Added
+- New `modules` sub-module that has an optional `Registry` class
+  that I ripped out of one of my apps to make it more generic.
+### Changed
+- The App class will issue an error message to the JS console if
+  a duplicate extension id is used.
+
 ## [1.4.0] - 2025-04-10
 ### Changed
 - WebApp options are now a private object copying all properties
@@ -66,7 +74,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.com/supernovus/lum.web-app.js/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/supernovus/lum.web-app.js/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/supernovus/lum.web-app.js/compare/v1.4.0...v1.5.0
+[1.4.0]: https://github.com/supernovus/lum.web-app.js/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/supernovus/lum.web-app.js/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/supernovus/lum.web-app.js/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/supernovus/lum.web-app.js/compare/v1.0.0...v1.1.0
